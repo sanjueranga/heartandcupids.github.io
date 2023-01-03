@@ -1,0 +1,386 @@
+
+:root{
+  --sectioncolor: rgb(230, 93, 93);
+  --navbarback: rgb(31, 28, 28);
+  --logo:rgb(246, 193, 246);
+  --subtitle:rgb(246, 193, 246);
+  --title: rgb(239, 85, 85);
+  
+  --item-icon:rgb(255, 0, 128);
+  --section-font:black;
+  --input-font:rgb(220, 20, 220);
+  --footer-font:rgb(246, 193, 246);
+  --footer-icon:rgb(255, 0, 128);
+  --icon-hover:rgb(246, 193, 246);
+  --item-title:rgb(246, 193, 246);
+  --item-text: rgb(197, 188, 188);
+  --tag-hover:blue;
+  --footerback: rgb(45, 28, 42);
+
+  --inputhover:blue;
+  --footername: rgb(239, 85, 85);
+
+  
+
+  
+
+
+}
+
+
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none; }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  body,section{
+    background-color: var(--sectioncolor);
+  }
+  
+  img,
+  span,
+  time,
+  input,
+  strong,
+  button,
+  ion-icon { display: block; }
+  
+  img { height: auto; }
+  
+  ion-icon { pointer-events: none; }
+  
+  input,
+  button {
+    background: none;
+    border: none;
+    font: inherit;
+  }
+  
+  button { cursor: pointer; }
+ 
+
+.item-title{
+    color:var(--item-title);
+    
+}
+
+  body {
+    
+    font-size: 1.6rem;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:active { text-decoration: none; }
+
+  .logo {
+
+    color:var(--logo);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  
+  .navbar-link{
+    color:var(--logo);
+    
+  }
+
+  .navbar-list span{
+    padding-left: 50px;
+  }
+
+  .event p{
+    color:var(--subtitle);
+    font-size: 32px;
+  }
+
+ .event-title{
+    font-size: 122px;
+    color:var(--title);
+    font-family: 'Dancing Script', cursive;
+ }
+ 
+  
+.event-title,.date{
+    display: inline-block;
+}
+
+.date{
+    padding-left:75%;
+    color:var(--title);
+}
+
+.forteen , .th{
+    display: inline-block
+}
+
+.input-group{
+    padding-bottom: 30px;
+}
+
+  .section {  
+            background-color:var(--sectioncolor);
+            padding-top: 2%;
+            margin-bottom: -30px;
+            
+            }
+
+  .section-text { line-height: 2; }
+  
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .header {
+    
+    left: 0;
+    width: 100%;
+    background-color: var(--navbarback);
+    padding-block: 18px;
+    z-index: 4;
+  }
+  
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 140px);
+    height: 1px;
+  }
+  
+  
+  
+  .header.active::after { display: none; }
+  
+  .header .container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .img-container {
+    padding-block-start: 0;
+    
+    padding-bottom: 25px;
+  }
+
+
+
+  
+  .img-container-list {
+    display: grid;
+    gap: 30px;
+  }
+  
+  .img-container-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  
+  .img-container-item .item-icon {
+    color: var(--item-icon);
+    font-size: 5.5rem;
+    margin-block-start: 10px;
+  } 
+  .img-container-item .item-icon:hover {
+    color:var(--icon-hover);
+  }
+  
+  .img-container-item .item-icon ion-icon { --ionicon-stroke-width: 25px; }
+  
+    .img-container-item .item-title { margin-block-end: 10px; }
+  
+  .img-container .item-text {
+    max-width: 25ch;
+    color:var(--item-text);
+    font-size:18spx;
+  }
+  .img-container { padding-block-start: var(--section-padding); }
+  
+  .img-container-list { grid-template-columns: repeat(4, 1fr); }
+
+  
+  
+
+  .about { padding-block-start: 120px; }
+  
+  .about-banner {
+    position: relative;
+    max-width: max-content;
+    margin-block-end: 30px;
+  }
+  
+  
+  
+  .about-img {
+    max-width: max-content;
+    margin-block-end: 30px;
+  }
+
+
+  footer {
+    background-color:var(--footerback);
+    padding-block: 40px;
+  }
+  
+  .footer .container {
+    margin-inline: 15px;
+    
+    padding: 20px;
+  }
+
+  .copyright { text-align: center;
+                 }
+  
+.copyright-name {display: inline-block; max-width: 100px; vertical-align: middle;}
+
+.footer-quicklinks ion-icon{
+  display: inline-block;
+  size: 50px;
+  color: var(--footer-icon);
+  
+}
+
+
+
+ion-icon{
+    width:  30px;
+      height: 30px;
+     
+      border-radius: 50%;
+      display:         inline;
+
+}
+
+
+
+
+    .banner-row {
+      display: flex;
+      gap: 50px;
+    }
+ 
+    .event {
+      
+      background-image: url("background2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+      min-height: 780px;
+      
+    }
+
+   
+    .header { padding-block: 25px; }
+ 
+    .navbar-list {
+      all: unset;
+      display: flex;
+      gap: 10px;
+    }
+  
+  
+    .event {
+        padding-block: 200px 325px;
+        background-position: center;
+      }
+
+
+
+    
+    .img-container {
+      padding-block-start: 0;
+      margin-block-start: -185px;
+      background-color: transparent;
+    }
+  
+    .footer .container {
+      margin-inline: 30px;
+      width: auto;
+    }
+  
+#bloc4,.banner-col{
+    
+    display: inline;
+}
+
+.media{
+    margin: auto;
+    padding-left: 15%;
+    background-color: var(--sectioncolor);
+    position: relative;
+    
+}
+
+.input-group-prepend{
+  padding-left: 10px;
+}
+
+.footer-social-list{
+  display: flex;
+  padding-left: 290px;
+  gap: 25px;
+  
+}
+
+footer{
+  align-items: center;
+  
+}
+.footerfont {
+  color: var(--footer-font);
+}
+.footerfont a{
+  color:var(--footername)
+}
+
+.shadow img {
+  transition: .5s ease;
+  }
+  
+  .shadow img:hover{
+  box-shadow:
+  1px 1px #373737,
+  2px 2px #373737,
+  3px 3px #373737,
+  4px 4px #373737,
+  5px 5px #373737,
+  6px 6px #373737;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: .5s ease;
+  }
+
+
+.input-group-text:hover{
+  background-color: var(--inputhover);
+}
+
+.heart {
+	
+	animation: beat .5s infinite alternate;
+	transform-origin: center;
+}
+@keyframes beat{
+	to { transform: scale(1.1); }
+}
